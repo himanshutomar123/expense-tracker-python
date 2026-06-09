@@ -15,6 +15,8 @@ while True:
     if choice == 1:
         name=input("ENTER NAME=")
         mob_no=int(input("ENTER MOBILE NUMBER="))
+        if len(mob_no) != 10:
+            print("INVALID NUMBER")
 
         contact={
             'name':name,
@@ -54,7 +56,7 @@ while True:
         found=False
         
         for contact in contacts:
-            if contact['name']==edit_name:
+            if contact['name'].lower() == edit_name.lower():
                 print("CONTACT FOUND")
 
                 new_name=input("ENTER NEW NAME:")
@@ -75,9 +77,9 @@ while True:
         found=False
 
         for contact in contacts:
-            if contact['name']== delete_name:
+            if contact['name'].lower() == delete_name.lower():
                 print("CONTACT FOUND")
-                contacts.remove[contact]
+                contacts.remove(contact)
                 print("CONTACT DELETE SUCCESSFULLY")
 
                 found= True
