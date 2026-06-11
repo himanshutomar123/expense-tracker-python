@@ -54,7 +54,7 @@ while True:
         print("=" * 40)
         print(f"Student Name  : {name}")
         print(f"Marks         : {sub1}, {sub2}, {sub3}, {sub4}, {sub5}")
-        print(f"Total Marks   : {total} / 500")
+        print(f"Total Marks   : {total} / 500")ex
         print(f"Percentage    : {percentage:.1f}%")
         print(f"Grade         : {grade}")
         print("=" * 40)
